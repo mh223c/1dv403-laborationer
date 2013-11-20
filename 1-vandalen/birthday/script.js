@@ -3,14 +3,23 @@
 window.onload = function(){
 
 	
-	var birthday = function(date){
-		
-
-
-			// Din kod här.
-
-
-
+	var birthday = function(date){  
+	    
+        var daysday = new Date();
+        
+        var datee = daysday.getDate();
+        var month = daysday.getMonth()+ 1;
+        var year = daysday.getYear();
+        if(year < 1900){
+            year += 1900;
+        }
+        
+        console.log( + year + " " + month + " " + datee);    
+            
+			
+            
+            
+            
 
 	};
 	// ------------------------------------------------------------------------------
