@@ -5,19 +5,17 @@ window.onload = function(){
 	
 	var birthday = function(date){  
 	    
-        var daysday = new Date();
-        
-        var datee = daysday.getDate();
-        var month = daysday.getMonth()+ 1;
-        var year = daysday.getYear();
-        if(year < 1900){
-            year += 1900;
-        }
-        
-        console.log( + year + " " + month + " " + datee);    
-            
-			
-            
+    
+	    
+	    
+	  var d = new Date(date);
+	  var n = d.getTime();
+	  
+	  var todaysDate = new Date();
+	  var todaysDateTwo = todaysDate.getTime();
+	  
+	  
+	  return n - todaysDateTwo;
             
             
 
