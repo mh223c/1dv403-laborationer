@@ -13,27 +13,35 @@ window.onload = function(){
 			
 		// Plats för förändring.
 	
-	guesses += 1;
-		
-    if (secret > number){
-    
-        return [false, "Det hemliga talet är högre!"];
-    }
-    
-    if (secret < number){
-    
-        return [false, "Det hemliga talet är lägre!"];
-    }
-    
-    if (secret == number){
-    
-        return [true, "Grattis du vann! Det hemliga talet var "+secret+" och du behövde "+guesses+" gissningar för att hitta det."];
-    }
-    
-    if (number < 0 || number > 100){
+	
+	
+	if (number < 0 || number > 100){
     
         return [false, "Talet är utanför intervallet 0 - 100"];    
+    }else{
+        
+        if (secret > number){
+            guesses += 1;
+            return [false, "Det hemliga talet är högre!"];
+        }
+        
+        if (secret < number){
+            guesses += 1;
+            return [false, "Det hemliga talet är lägre!"];
+        }
+        
+        if (secret == number){
+            guesses += 1;
+            return [true, "Grattis du vann! Det hemliga talet var "+secret+" och du behövde "+guesses+" gissningar för att hitta det."];
+        }
+        if(isNaN(number)){
+            return [false, "fel"]
+        }
     }
+	
+    
+    
+    
     
 
 		// Returnera exempelvis: 

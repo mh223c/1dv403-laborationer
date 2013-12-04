@@ -47,7 +47,7 @@ window.onload = function(){
 		// Vid fel, kasta ett undantag med ett meddelande till användaren. 
 	
         if (!isNaN(str * 1)){
-            return["FEL! Måste mata in bokstäver."]
+            return["FEL! Måste mata in bokstäver."];
         }
 		
 		// Returnera den konverterade strängen.
