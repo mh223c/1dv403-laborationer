@@ -1,0 +1,42 @@
+#container{
+
+background-color: white;
+height: 300px;
+width: 600px;
+border-style: solid;
+}
+
+#content{
+    margin: auto;
+    background-color: #4682B4;
+    max-width: 500px;
+    max-width: 960;
+}
+
+h1{
+    text-align: center;
+}
+#textarea{
+
+}
+
+#button{
+    float: right;
+    margin-right: 37px;
+    margin-top: -7px;
+}
+
+#textrutaN{
+background-color: black;
+width: 550px;
+height: 150px;
+
+}
+
+#textruta{
+    background-color: #4682B4;
+    text-align: center;
+    width: 500;
+    height: 200px;
+}
+
