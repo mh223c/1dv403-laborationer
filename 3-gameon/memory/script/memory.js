@@ -80,7 +80,7 @@ var Memory = {
     alike:function(index){
         if(Memory.lastGuess >= 0 && Memory.lastGuess != index){
             
-            
+            var victory = Memory.rows * Memory.cols / 2;
             if(Memory.picArray[Memory.lastGuess] != Memory.picArray[index]){
                 Memory.flip(index, Memory.lastGuess);
                 
